@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial";
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/praia.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 70px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul li{
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fdfdfd;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 21px;
+    margin-left: 1px;
+}
+ul li a:hover{
+    background-color: darkorange;
+    color: white ;
+}
+ul li.active a{
+    background-color: darkorange;
+    color: white;
+    padding: 5px 15px;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 35px;
+
+
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 1px;
+}
+.btn{
+    border: 1px solid darkorange;
+    padding: 8px 20px;
+    color: #ffffff;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+.btnn{
+    border: 1px solid darkorange;
+    padding: 8px 20px;
+    color: #ffffff;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 6px;   
+}
+
+
+.btnn:hover{
+    background-color: darkorange;
+    color:#fff;
+}
+
+.btn:hover{
+    background-color: darkorange;
+    color:#fff;
+    
+
+}
+.sub-menu{
+    display: none;
+    top: 8%;
+    position: relative;
+}
+.sub-menu ul{
+    position: absolute;
+}
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color:darkorange ;
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .sub-menu ul{
+    display:block;
+    margin: 6px;
+}
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
